@@ -292,3 +292,55 @@ footer {
     transform: translateY(0); /* Retorna à posição original */
 }
 
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem; /* Reduz o tamanho da fonte no título */
+        padding: 40px; /* Ajusta o padding */
+    }
+
+    .introducao-mentoria, .estrutura-mentoria {
+        flex-direction: column; /* Coloca os elementos em coluna */
+        align-items: center; /* Centraliza os itens */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .imagem-esquerda, .imagem-direita {
+        width: 100%; /* Faz as imagens ocuparem 100% da largura */
+        max-width: 300px; /* Limita a largura máxima das imagens */
+    }
+
+    .imagem-esquerda img, .imagem-direita img {
+        width: 100%; /* Faz a imagem ocupar toda a largura disponível */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+    .footer-content {
+        flex-direction: column; /* Alinha o conteúdo do rodapé em coluna */
+        align-items: center; /* Centraliza os itens do rodapé */
+    }
+
+    .footer-section {
+        margin: 10px 0; /* Adiciona espaço vertical entre as seções do rodapé */
+        width: 100%; /* Faz as seções do rodapé ocuparem toda a largura */
+    }
+
+    .titulo-dourado {
+        font-size: 1.5em; /* Ajusta o tamanho da fonte para o título no rodapé */
+    }
+
+    .social-icons img {
+        width: 30px; /* Reduz o tamanho dos ícones sociais */
+    }
+}
+
+/* Ajustes para telas muito pequenas (até 480px) */
+@media (max-width: 480px) {
+    .hero-section h1 {
+        font-size: 1.5rem; /* Reduz ainda mais o tamanho da fonte */
+        padding: 20px; /* Ajusta o padding */
+    }
+
+    .footer-bottom {
+        font-size: 0.8em; /* Diminui o tamanho da fonte do rodapé */
+    }
+}
