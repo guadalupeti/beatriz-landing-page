@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: #E0E0E0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Seção Hero */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    z-index: 1;
+    padding: 80px;
+    color: #E0E0E0;
+}
+
+.texto-vermelho {
+    color: red;
+}
+
+.texto-dourado {
+    color: gold;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 20%;
+}
+
+
+/* Introdução à Mentoria */
+.introducao-mentoria, .estrutura-mentoria, .biografia-mentora {
+    padding: 40px 20px;
+    margin: 20px 0;
+    color: #E0E0E0;
+    margin: 0 20px;
+}
+
+.introducao-mentoria h2, .estrutura-mentoria h2, .biografia-mentora h2 {
+    font-size: 2rem;
+    color: gold;
+}
+
+.introducao-mentoria p, .estrutura-mentoria p, .biografia-mentora p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.introducao-mentoria ul, .estrutura-mentoria ul {
+    list-style-type: none;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.introducao-mentoria ul li, .estrutura-mentoria ul li {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.introducao-mentoria ul li strong, .estrutura-mentoria ul li strong {
+    color: gold;
+}
+
+/* Seção de Chamada à Ação */
+.cta-section, .cta-section-final {
+    text-align: center;
+    padding: 50px 20px;
+    margin: 0 20px;
+
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: gold;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.cta-btn:hover {
+    background-color: darkgoldenrod;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+footer {
+    background-color: rgb(29, 29, 29);
+    padding: 40px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+}
+
+.footer-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: gold;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #FFD700;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 40px;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 10px 0;
+    color: #ccc;
+    font-size: 0.9em;
+}
+.biografia-mentora {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.biografia-mentora img {
+    max-width: 150px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+/* Ajustes de Layout */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin: 10px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+        padding: 40px;
+    }
+
+    .biografia-mentora {
+        flex-direction: column;
+    }
+
+    .biografia-mentora img {
+        margin-bottom: 20px;
+    }
+}
+
+/* Imagens intercaladas */
+.imagem-esquerda, .imagem-direita {
+    width: 50%;
+    padding: 20px;
+}
+
+.imagem-esquerda img, .imagem-direita img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.texto-direita, .texto-esquerda {
+    width: 50%;
+    padding: 20px;
+}
+
+.introducao-mentoria, .estrutura-mentoria, .biografia-mentora {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.introducao-mentoria .imagem-esquerda, 
+.biografia-mentora .imagem-esquerda {
+    order: 1;
+}
+
+.introducao-mentoria .texto-direita, 
+.biografia-mentora .texto-direita {
+    order: 2;
+}
+
+.estrutura-mentoria .imagem-direita {
+    order: 2;
+}
+
+.estrutura-mentoria .texto-esquerda {
+    order: 1;
+}
+
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+    .introducao-mentoria, .estrutura-mentoria, .biografia-mentora {
+        flex-direction: column;
+    }
+
+    .imagem-esquerda, .imagem-direita, 
+    .texto-direita, .texto-esquerda {
+        width: 100%;
+        padding: 0;
+    }
+    .subtitulo-inspirador h2 {
+        font-size: 1.5rem;
+    }
+    
+    .subtitulo-inspirador h2 br {
+        display: block; /* Permite quebra de linha em telas menores */
+    }
+}
+
+.cta-button {
+    background-color: gold; /* Cor de fundo dourada */
+    color: #121212; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    text-decoration: none; /* Remove o sublinhado */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave */
+    display: inline-block; /* Para que o padding funcione */
+    margin-top: 10px; /* Espaçamento acima do botão */
+}
+
+.cta-button:hover {
+    background-color: #FFD700; /* Cor de fundo ao passar o mouse */
+    color: white; /* Cor do texto ao passar o mouse */
+}
+
+.fade-in {
+    opacity: 0; /* Começa invisível */
+    transform: translateY(20px); /* Move o elemento para baixo */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Animação de transição */
+}
+
+.fade-in.visible {
+    opacity: 1; /* Fica visível */
+    transform: translateY(0); /* Retorna à posição original */
+}
+

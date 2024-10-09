@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentoria Método Viver</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Seção Hero -->
+    <div class="hero-section fade-in">
+        <video autoplay muted loop id="background-video">
+            <source src="video_fundo.mp4" type="video/mp4">
+        </video>
+        <h1>Construa uma rotina de sucesso para <span class="texto-vermelho">2025</span>: estruture hábitos que vão <span class="texto-dourado">transformar sua vida</span></h1>
+    </div>
+
+    <!-- Seção 1: Introdução ao Grupo de Mentoria -->
+    <div class="introducao-mentoria fade-in">
+        <div class="imagem-esquerda">
+            <img src="pexels-wildlittlethingsphoto-1015568.jpg" alt="Imagem Motivacional">
+        </div>
+        <div class="texto-direita ">
+            <h2>Quer começar 2025 com o pé direito?</h2>
+            <p>Os últimos meses do ano são perfeitos para construir as bases de uma rotina sólida que vai te acompanhar durante 2025...</p>
+            <ul>
+                <li><strong>Planejamento Antecipado:</strong> Aplique desde novembro estratégias para desenvolver hábitos consistentes.</li>
+                <li><strong>Manutenção dos Hábitos:</strong> Entenda como manter a motivação...</li>
+                <li><strong>Suporte Personalizado:</strong> Durante três meses, você terá acompanhamento próximo para ajustar sua rotina...</li>
+            </ul>
+            <a href="inscricao.html" class="cta-button">Inscreva-se Agora</a> <!-- Botão CTA -->
+        </div>
+    </div>
+
+    <!-- Seção 2: Estrutura da Mentoria -->
+    <div class="estrutura-mentoria fade-in">
+        <div class="texto-esquerda">
+            <h2>O que você vai aprender?</h2>
+            <p>Identificação de Hábitos-Chave, Estruturação de Rotinas, Manutenção e Superação de Obstáculos...</p>
+            <ul>
+                <li><strong>Identificação de Hábitos-Chave:</strong> Descubra quais são os hábitos mais impactantes...</li>
+                <li><strong>Estruturação de Rotinas:</strong> Crie uma rotina personalizada, com foco na sua realidade...</li>
+                <li><strong>Mensuração do Progresso:</strong> Em janeiro, avaliaremos juntos como a implementação dos hábitos...</li>
+            </ul>
+            <a href="inscricao.html" class="cta-button">Inscreva-se Agora</a> <!-- Botão CTA -->
+        </div>
+        <div class="imagem-direita">
+            <img src="pexels-thngocbich-669986.jpg" alt="Imagem de Planejamento">
+        </div>
+    </div>
+
+    <div class="introducao-mentoria fade-in">
+        <div class="imagem-esquerda">
+            <img src="pexels-olly-927022.jpg" alt="Imagem Motivacional">
+        </div>
+        <div class="texto-direita">
+            <h2>Está pronto para criar hábitos que transformem seu 2025?</h2>
+            <p>Quanto antes você começar, mais fácil será manter o ritmo no próximo ano...</p>
+            <a href="inscricao.html" class="cta-button">Inscreva-se Agora</a> <!-- Botão CTA -->
+        </div>
+    </div>
+
+    <div class="estrutura-mentoria fade-in">
+        <div class="texto-esquerda">
+            <h2>Conheça sua mentora</h2>
+            <p>Beatriz Bouzada é mentora e psicóloga com mais de 20 anos de experiência ajudando pessoas a alcançarem suas metas e a se desenvolverem pessoalmente.</p>
+            <a href="sobre.html" class="cta-button">Saiba Mais</a> <!-- Botão CTA -->
+        </div>
+        <div class="imagem-direita">
+            <img src="CLS_0438 (2).JPG" alt="Imagem de Planejamento">
+        </div>
+    </div>
+
+    <!-- Seção 3: Chamada à Ação -->
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2 class="titulo-dourado">Sobre Beatriz Bouzada</h2>
+                <p>Beatriz Bouzada é especialista em desenvolvimento pessoal...</p>
+                <a href="sobre.html" class="cta-button">Saiba Mais</a> <!-- Botão CTA -->
+            </div>
+            <div class="footer-section links">
+                <h2 class="titulo-dourado">Links Rápidos</h2>
+                <ul>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="index.html">Mentorias</a></li>
+                    <li><a href="https://wa.me/553299627281">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social-media">
+                <h2 class="titulo-dourado">Redes Sociais</h2>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/beatrizbouzada"><img src="instagram.png" alt="Instagram"></a>
+                    <a href="https://wa.me/553299627281"><img src="whatsapp.png" alt="WhatsApp"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Beatriz Bouzada | Todos os direitos reservados</p>
+        </div>
+    </footer>
+    <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                const elements = document.querySelectorAll('.fade-in'); // Seleciona todos os elementos com a classe 'fade-in'
+        
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible'); // Adiciona a classe 'visible' quando entra na visualização
+                            observer.unobserve(entry.target); // Para observar o elemento após a animação
+                        }
+                    });
+                });
+        
+                elements.forEach(element => {
+                    observer.observe(element); // Observa cada elemento
+                });
+            });
+    </script>
+</body>
+</html>
